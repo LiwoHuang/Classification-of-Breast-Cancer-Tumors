@@ -5,7 +5,7 @@ from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split, GridSearchCV
 from memory_profiler import memory_usage
 
-# 数据加载和预处理
+# read data and preprocessing
 def load_and_preprocess_data():
     data = []
     with open('wdbc.data', mode='r') as file:
@@ -25,7 +25,7 @@ def load_and_preprocess_data():
 
     return X_train, X_test, y_train, y_test
 
-# 设置和运行SVM模型
+# Model
 def setup_and_run_svm(X_train, y_train):
     svm_model = SVC(random_state=0)
     param_grid = {
