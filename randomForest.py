@@ -29,7 +29,5 @@ rfc.fit(X_train, y_train)
 validationScore = rfc.score(X_val, y_val)
 print("Validation accuracy: ", validationScore)
 
-# grid search here for hyper parameters?
-
 testScore = rfc.score(X_test, y_test)
 print("Test accuracy: ", testScore)
